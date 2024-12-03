@@ -4,8 +4,8 @@
 
 ######################
 
-input_file = open("day_1_input.txt", "r")
-list_of_numbers = input_file.read().split("\n")
+with open("day_1_input.txt", "r") as input_file:
+    list_of_numbers = input_file.read().strip().split("\n")
 
 left = []
 right = []
@@ -23,7 +23,7 @@ right.sort()
 for i in range(len(left)):
     result1.append(abs(left[i] - right[i]))
 
-print(sum(result1))
+print(sum(result1)) # 2815556
 
 # part two
 for i in range(len(left)):
@@ -33,4 +33,4 @@ for i in range(len(left)):
             count += 1
     if count != 0:
         result2.append(left[i] * count) 
-print(sum(result2))
+print(sum(result2)) # 23927637
