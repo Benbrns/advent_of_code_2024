@@ -1,4 +1,10 @@
-input_file = open("2_input.txt", "r")
+######################
+
+# website link: https://adventofcode.com/2024/day/2
+
+######################
+
+input_file = open("day_2_input.txt", "r")
 list_of_numbers = input_file.read().split("\n")
 
 list_t = []

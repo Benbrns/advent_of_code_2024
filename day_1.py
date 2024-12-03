@@ -4,7 +4,7 @@
 
 ######################
 
-input_file = open("1_input.txt", "r")
+input_file = open("day_1_input.txt", "r")
 list_of_numbers = input_file.read().split("\n")
 
 left = []
